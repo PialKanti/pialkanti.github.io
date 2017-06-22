@@ -28,7 +28,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
     <link rel="shortcut icon" href="assets/images/ico/favicon.ico">
-    </head>
+</head>
 
 <body ng-controller="databaseController">
     <!-- Preloader -->
@@ -137,7 +137,7 @@
                     </div>
                     <div class="resume">
                         <ul class="timeline">
-                            <li ng-repeat="institution in education | orderBy: institution.order : reverse" ng-class="{'timeline-inverted': institution.inverse == 'yes'}" >
+                            <li ng-repeat="institution in education | orderBy: institution.order : reverse" ng-class="{'timeline-inverted': institution.inverse == 'yes'}">
                                 <div class="posted-date"> <span class="month">{{institution.duration}}</span> </div>
                                 <!-- /posted-date -->
                                 <div class="timeline-panel wow fadeInUp">
@@ -154,12 +154,12 @@
                                 </div>
                                 <!-- /timeline-panel -->
                             </li>
-                           
+
                         </ul>
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="resume-title">
@@ -169,27 +169,33 @@
                         <ul class="timeline">
                             <li ng-repeat="company in experience | orderBy: company.id : reverse" ng-class="{'timeline-inverted': company.inverse == 'yes'}">
                                 <div class="posted-date">
-                                  <span class="month">{{company.duration}}</span>
-                                </div><!-- /posted-date -->
+                                    <span class="month">{{company.duration}}</span>
+                                </div>
+                                <!-- /posted-date -->
 
                                 <div class="timeline-panel wow fadeInUp">
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
                                             <h3>{{company.Position}}</h3>
                                             <span>{{company.name}}</span>
-                                        </div><!-- /timeline-heading -->
+                                        </div>
+                                        <!-- /timeline-heading -->
 
                                         <div class="timeline-body">
                                             <p>{{company.details}}</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
+                                        </div>
+                                        <!-- /timeline-body -->
+                                    </div>
+                                    <!-- /timeline-content -->
+                                </div>
+                                <!-- /timeline-panel -->
                             </li>
 
                         </ul>
                     </div>
                 </div>
-            </div><!-- /row -->
+            </div>
+            <!-- /row -->
         </div>
         <!-- /.container -->
     </section>
@@ -406,13 +412,13 @@
         <!-- /.container -->
     </section>
     <!-- End Contact Section -->
-    
+
     <!-- Scroll-up -->
     <div class="scroll-up"> <a href="#home"><i class="fa fa-angle-up"></i></a> </div>
 
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    
+
     <!--Angular Route-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.js"></script>
 
@@ -422,8 +428,6 @@
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
 
-    <!--Controller file-->
-    <script src="assets/controllers/controller.js"></script>
 
 
     <!-- Javascript files -->
@@ -441,6 +445,8 @@
     <script src="assets/js/jquery.fitvids.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDlJZ_osEpztfcHUCi1pJT0A_-Mn-YJLFc&amp;sensor=false"></script>
     <script src="assets/js/scripts.js"></script>
+    <!--Controller file-->
+    <script src="assets/controllers/controller.js"></script>
 </body>
 
 </html>
