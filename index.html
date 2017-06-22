@@ -74,6 +74,7 @@
                         <li><a href="#resume">Resume</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#works">Works</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -345,6 +346,35 @@
         <!-- /.container -->
     </section>
     <!-- End Works Section -->
+
+    <!--Certification Section Start-->
+    <section id="certifications" class="certification-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Certifications</h2>
+            <h4 class="course-text-header">My Online Courses</h4>
+            <div class="row well" ng-repeat="course in courses | orderBy: '-order'">
+                <div class="col-md-1">
+                    <img src="assets/images/certificate.png" class="course-icon">
+                </div>
+                <div class="col-md-9 course-details">
+                    <ul>
+                        <li><a href="{{course.url}}" target="_blank" class="course-title">{{course.name}}</a></li>
+                        <li class="course-provider">
+                            {{course.institute}}
+                        </li>
+                        <li class="course-date">
+                            {{course.date}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <center>
+                        <img src="{{course.image}}" class="course-provider-icon">
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Hire Section -->
     <section class="hire-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">

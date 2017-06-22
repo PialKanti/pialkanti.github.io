@@ -24,6 +24,7 @@ myModule.controller("databaseController", function ($scope, $firebaseArray, $fir
     $scope.education = $firebaseArray(ref.child("education"));
     $scope.experience = $firebaseArray(ref.child("experience"));
     $scope.projects = $firebaseArray(ref.child("Projects"));
+    $scope.courses = $firebaseArray(ref.child("courses"));
 
     $scope.loadMore = function () {
         if ($scope.quantity == 8) {
