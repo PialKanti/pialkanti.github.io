@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ResumeWebsite">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Personal Portfolio vCard Template">
+    <meta name="author" content="Ahmed Faruk">
+    <title>Welcome to Pial's world</title>
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Font Awesome CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <!-- Animate css -->
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <!-- Magnific css -->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Custom styles CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" media="screen">
+    <!-- Responsive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <link rel="shortcut icon" href="assets/images/ico/favicon.ico">
+    </head>
+
+<body ng-controller="databaseController">
+    <!-- Preloader -->
+    <div id="tt-preloader">
+        <div id="pre-status">
+            <div class="preload-placeholder"></div>
+        </div>
+    </div>
+    <!-- Home Section -->
+    <section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+        <div class="intro">
+            <div class="intro-sub"><span style="color:#68c3a3">Hi!</span> I am</div>
+            <h1 style="text-transform: none;">Pial Kanti Samadder</h1>
+            <p>I am a Mobile application &amp; web Developer<br> involving with latest mobile app development &amp; web designing technologies.<br> Feel free to contact me.</p>
+            <div class="social-icons">
+                <ul class="list-inline">
+                    <li><a href="https://www.facebook.com/pialkanti.samadder"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/PialKanti"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/PialKanti"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://linkedin.com/in/pial-kanti-samadder-86771210b"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://plus.google.com/112271852994881512681"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+            <!-- /.social-icons -->
+        </div>
+        <div class="mouse-icon">
+            <div class="wheel"></div>
+        </div>
+    </section>
+    <!-- End Home Section -->
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar navbar-custom" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <!--                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>-->
+                </div>
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- .container -->
+        </nav>
+    </header>
+    <!-- End Navigation -->
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">About Me</h2>
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">
+                    <div class="biography">
+                        <div class="myphoto"> <img src="assets/images/myphoto.jpg" alt=""> </div>
+                        <ul>
+                            <li><strong>Name:</strong> Pial Kanti Samadder</li>
+                            <li><strong>Address:</strong> {{ address.$value }}</li>
+                            <li><strong>Nationality:</strong> Bangladeshi</li>
+                            <li><strong>Phone:</strong> {{ phone.$value }}</li>
+                            <li><strong>Email:</strong> {{ email.$value}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- col-md-4 -->
+                <div class="col-md-8 col-md-pull-4">
+                    <div class="short-info wow fadeInUp">
+                        <h3>Objective</h3>
+                        <p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in mobile &amp; web application developement. I focus on using my interpersonal skills to build good user experience. I hope to develop skills in desktop application and my knowledge of the Mobile &amp; Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
+                    </div>
+                    <div class="short-info wow fadeInUp">
+                        <h3>What I Do ?</h3>
+                        <p>I have been working as a mobile &amp; web application developer since my unversity 2<sup>nd</sup> year. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS3, Boostrap, AngularJS and HTML5 for modern websites using J2EE,Java Spring MVC &amp; Php and latest android sdk knowledge.I also develop desktop application using Java. I love to make new technologies using innovative ideas.</p>
+                        <ul class="list-check">
+                            <li>Mobile App Development</li>
+                            <li>Web development</li>
+                            <li>Web design</li>
+                            <li>Desktop application development</li>
+                            <li>Problem Solving</li>
+                            <li>Software Testing</li>
+                        </ul>
+                    </div>
+                    <div class="my-signature"> <img src="" alt=""> </div>
+                    <div class="download-button"> <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Send me message</a> <a class="btn btn-primary btn-lg" href="https://drive.google.com/open?id=0B0g1s0wKwSdfQUg1Z1VVblpyXzg" target="_blank"><i class="fa fa-download"></i>download my cv</a> </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- End About Section -->
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Resume</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li ng-repeat="institution in education | orderBy: institution.order : reverse" ng-class="{'timeline-inverted': institution.inverse == 'yes'}" >
+                                <div class="posted-date"> <span class="month">{{institution.duration}}</span> </div>
+                                <!-- /posted-date -->
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>{{institution.name}}</h3> <span>{{institution.where}}</span> </div>
+                                        <!-- /timeline-heading -->
+                                        <div class="timeline-body">
+                                            <p>{{institution.details}}</p>
+                                        </div>
+                                        <!-- /timeline-body -->
+                                    </div>
+                                    <!-- /timeline-content -->
+                                </div>
+                                <!-- /timeline-panel -->
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li ng-repeat="company in experience | orderBy: company.id : reverse" ng-class="{'timeline-inverted': company.inverse == 'yes'}">
+                                <div class="posted-date">
+                                  <span class="month">{{company.duration}}</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>{{company.Position}}</h3>
+                                            <span>{{company.name}}</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>{{company.details}}</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- End Resume Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skill-progress">
+                        <div class="skill-title">
+                            <h3>Java</h3>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span></span> </div>
+                        </div>
+                        <!-- /.progress -->
+                    </div>
+                    <!-- /.skill-progress -->
+                    <div class="skill-progress">
+                        <div class="skill-title">
+                            <h3>Android</h3>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span></span> </div>
+                        </div>
+                        <!-- /.progress -->
+                    </div>
+                    <!-- /.skill-progress -->
+                    <div class="skill-progress">
+                        <div class="skill-title">
+                            <h3>Php</h3>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span></span> </div>
+                        </div>
+                        <!-- /.progress -->
+                    </div>
+                    <!-- /.skill-progress -->
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+                    <div class="skill-progress">
+                        <div class="skill-title">
+                            <h3>C++</h3>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><span></span> </div>
+                        </div>
+                        <!-- /.progress -->
+                    </div>
+                    <!-- /.skill-progress -->
+                    <div class="skill-progress">
+                        <div class="skill-title">
+                            <h3>SQL</h3>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span></span> </div>
+                        </div>
+                        <!-- /.progress -->
+                    </div>
+                    <!-- /.skill-progress -->
+                    <div class="skill-progress">
+                        <div class="skill-title">
+                            <h3>AngularJS</h3>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span></span> </div>
+                        </div>
+                        <!-- /.progress -->
+                    </div>
+                    <!-- /.skill-progress -->
+                </div>
+                <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+            <div class="skill-chart text-center">
+                <h3>More skills</h3>
+            </div>
+            <div class="row more-skill text-center">
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="chart" data-percent="70" data-color="e74c3c"> <span class="percent"></span>
+                        <div class="chart-text"> <span>J2EE</span> </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="chart" data-percent="50" data-color="2ecc71"> <span class="percent"></span>
+                        <div class="chart-text"> <span>Pyhon</span> </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="chart" data-percent="50" data-color="3498db"> <span class="percent"></span>
+                        <div class="chart-text"> <span>Javascript</span> </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="chart" data-percent="60" data-color="3498db"> <span class="percent"></span>
+                        <div class="chart-text"> <span>C</span> </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="chart" data-percent="80" data-color="3498db"> <span class="percent"></span>
+                        <div class="chart-text"> <span>HTML</span> </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="chart" data-percent="50" data-color="3498db"> <span class="percent"></span>
+                        <div class="chart-text"> <span>CSS</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- End Skills Section -->
+    <!-- Works Section -->
+    <section id="works" class="works-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Works</h2>
+            <div class="row">
+                <div id="grid">
+                    <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" ng-repeat="project in projects | orderBy: 'order' | limitTo: quantity ">
+                        <div class="portfolio-bg">
+                            <div class="portfolio">
+                                <div class="tt-overlay"></div>
+                                <div class="links"> <a class="image-link" href="{{project.image}}"><i class="fa fa-search-plus"></i></a> <a href="{{project.url}}"><i class="fa fa-link"></i></a> </div>
+                                <!-- /.links --><img width="270" height="200" src="{{project.image}}" alt="image">
+                                <div class="portfolio-info">
+                                    <h3>{{project.name}}</h3>
+                                </div>
+                                <!-- /.portfolio-info -->
+                            </div>
+                            <!-- /.portfolio -->
+                        </div>
+                        <!-- /.portfolio-bg -->
+                    </div>
+
+                </div>
+                <!-- /#grid -->
+            </div>
+            <!-- /.row -->
+            <center>
+                <button type="submit" name="submit" class="btn btn-primary" ng-click="loadMore()">{{buttonText}}</button>
+            </center>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- End Works Section -->
+
+    <!-- Hire Section -->
+    <section class="hire-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+        <div class="hire-section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>I'm available for Hiring</h2> <a href="#contact" class="btn btn-default">Hire me</a> </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.hire-section-bg -->
+    </section>
+    <!-- End Hire Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Get in touch</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-form"> <strong>Contact me</strong>
+                        <form name="contact-form" method="post" action="http://formspree.io/pialkanti2012@gmail.com">
+                            <div class="form-group">
+                                <label for="InputName1">Name</label>
+                                <input type="text" name="name" class="form-control" id="InputName1" required=""> </div>
+                            <div class="form-group">
+                                <label for="InputEmail1">Email</label>
+                                <input type="email" name="email" class="form-control" id="InputEmail1" required=""> </div>
+                            <div class="form-group">
+                                <label for="InputSubject">Subject</label>
+                                <input type="text" name="subject" class="form-control" id="InputSubject"> </div>
+                            <div class="form-group">
+                                <label for="InputTextarea">Message</label>
+                                <textarea name="message" class="form-control" id="InputTextarea" rows="5" required=""></textarea>
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-primary" ng-click="SubmitForm()">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+                    <div class="row center-xs">
+                        <div class="col-sm-6"> <i class="fa fa-map-marker"></i> <address>
+                  <strong>Address/Street</strong>
+                  {{ address.$value }}<br>
+                </address> </div>
+                        <div class="col-sm-6"> <i class="fa fa-mobile"></i>
+                            <div class="contact-number"> <strong>Phone Number</strong> {{ phone.$value }}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="location-map">
+                                <div id="mapCanvas" class="map-canvas"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- End Contact Section -->
+    
+    <!-- Scroll-up -->
+    <div class="scroll-up"> <a href="#home"><i class="fa fa-angle-up"></i></a> </div>
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    
+    <!--Angular Route-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <!--Controller file-->
+    <script src="assets/controllers/controller.js"></script>
+
+
+    <!-- Javascript files -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.countTo.js"></script>
+    <script src="assets/js/jquery.inview.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+    <script src="assets/js/jquery.fitvids.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDlJZ_osEpztfcHUCi1pJT0A_-Mn-YJLFc&amp;sensor=false"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
