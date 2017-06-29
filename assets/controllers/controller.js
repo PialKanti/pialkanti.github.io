@@ -20,6 +20,7 @@ myModule.controller("databaseController", function ($scope, $firebaseArray, $fir
     $scope.introText = $firebaseObject(ref.child("introText"));
     $scope.address = $firebaseObject(ref.child("address"));
     $scope.phone = $firebaseObject(ref.child("phoneNum"));
+    $scope.resumeLink = $firebaseObject(ref.child("resumeLink"));
     $scope.email = $firebaseObject(ref.child("email"));
     $scope.education = $firebaseArray(ref.child("education"));
     $scope.experience = $firebaseArray(ref.child("experience"));
