@@ -169,7 +169,7 @@
                     </div>
                     <div class="resume">
                         <ul class="timeline">
-                            <li ng-repeat="company in experience | orderBy: 'company.id' " ng-class="{'timeline-inverted': company.inverse == 'yes'}">
+                            <li ng-repeat="company in experience | orderBy: company.id " ng-class="{'timeline-inverted': company.inverse == 'yes'}">
                                 <div class="posted-date">
                                     <span class="month">{{company.duration}}</span>
                                 </div>
