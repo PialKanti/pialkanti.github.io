@@ -1,0 +1,1 @@
+export enum ProjectType{Professional, Academic, Personal}

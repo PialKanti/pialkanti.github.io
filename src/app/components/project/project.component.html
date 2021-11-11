@@ -1,0 +1,14 @@
+<div class="row mt-3">        
+  <div class="col-md-8">
+    <p class="h4 font-weight-bolder text-success">&bull; {{project.name}}</p>
+    <ul *ngFor="let achievement of project.achievements">
+      <li class="m-1">{{achievement}}</li>
+    </ul>
+    <p><b>Technologies Used:</b> {{project.technologies.join(', ')}}</p>
+  </div>
+  <div class="col-md-4">
+      <p class="h5 font-weight-bolder" *ngIf=project.end>{{project.start}} &mdash; {{project.end}}</p>
+      <p class="h5 font-weight-bolder" *ngIf=!project.end>{{project.start}}</p>
+    <a class="btn btn-sm btn-outline-success" href="{{project.projectUrl}}" role="button">{{project.urlText}}</a>
+  </div>
+</div>

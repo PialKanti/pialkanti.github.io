@@ -7,13 +7,21 @@ import { HeaderComponent } from './components/header/header.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ExperiencesService } from './services/experiences.service';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectTypeComponent } from './components/project-type/project-type.component';
+import { ProjectComponent } from './components/project/project.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ExperiencesComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectsComponent,
+    ProjectTypeComponent,
+    ProjectComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
