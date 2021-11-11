@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row mt-5">
+      <div class="col-md-8">
+        <h5><b>{{jobExperience.company}}</b> &mdash; <i>{{ jobExperience.position }}</i></h5>
+        <p class="text-muted"><i>{{ jobExperience.address }}</i></p>
+        <ul *ngFor="let job of jobExperience.jobs">
+          <li>{{job}}</li>
+        </ul>
+        <p><b>Technologies Used:</b> {{jobExperience.techonologies.toString()}}</p>
+      </div>
+      <div class="col-md-4">
+        <h5><b>{{jobExperience.start}} &mdash; {{jobExperience.end}}</b></h5>
+      </div>
+    </div>
+</div>
