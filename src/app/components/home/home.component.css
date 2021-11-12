@@ -1,0 +1,21 @@
+.font-icon-url {
+  color: #212529;
+}
+
+.font-icon-url:hover {
+  color: #7b8a8b;
+}
+
+#about-me {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.course {
+  height: 1.6em;
+  font-size: 1.2em;
+}
+
+.university {
+  font-size: 1.1em;
+}

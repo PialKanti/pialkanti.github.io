@@ -11,6 +11,10 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectTypeComponent } from './components/project-type/project-type.component';
 import { ProjectComponent } from './components/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -21,11 +25,15 @@ import { FooterComponent } from './components/footer/footer.component';
     ProjectsComponent,
     ProjectTypeComponent,
     ProjectComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [ExperiencesService],
   bootstrap: [AppComponent]
