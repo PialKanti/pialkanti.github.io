@@ -1,13 +1,6 @@
 <div class="container">
-    <mat-tab-group mat-align-tabs="center">
-        <mat-tab label="Professional">
-            <project-type [projects]="projects.get(0)" type="Professional"></project-type>
-        </mat-tab>
-        <mat-tab label="Academic">
-            <project-type [projects]="projects.get(1)" type="Academic"></project-type>
-        </mat-tab>
-        <mat-tab label="Personal">
-            <project-type [projects]="projects.get(2)" type="Personal"></project-type>
-        </mat-tab>
-    </mat-tab-group>
+    <project-type [projects]="projects.get(0)" type="Professional"></project-type>
+    <project-type [projects]="projects.get(1)" type="Academic"></project-type>
+    <project-type [projects]="projects.get(2)" type="Personal"></project-type>
 </div>
+
