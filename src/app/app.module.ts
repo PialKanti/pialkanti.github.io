@@ -13,6 +13,7 @@ import { ProjectComponent } from './components/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './components/home/home.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './components/home/home.component';
     ProjectTypeComponent,
     ProjectComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
