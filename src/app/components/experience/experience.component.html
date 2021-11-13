@@ -1,15 +1,24 @@
 <div class="container">
-    <div class="row mt-5">
-      <div class="col-md-8">
-        <h5><b>{{jobExperience.company}}</b> &mdash; <i>{{ jobExperience.position }}</i></h5>
-        <p class="text-muted"><i>{{ jobExperience.address }}</i></p>
-        <ul *ngFor="let job of jobExperience.jobs">
-          <li>{{job}}</li>
-        </ul>
-        <p><b>Technologies Used:</b> {{jobExperience.techonologies.toString()}}</p>
-      </div>
-      <div class="col-md-4">
-        <h5><b>{{jobExperience.start}} &mdash; {{jobExperience.end}}</b></h5>
-      </div>
+  <div class="row mt-5">
+    <div class="col-md-8">
+      <p class="h5">
+        <fa-icon [icon]="faBuilding" class="fa-md"></fa-icon> &nbsp;<b>{{jobExperience.company}}</b> &mdash; <i>{{
+          jobExperience.position }}</i>
+      </p>
+      <p class="text-secondary">
+        <fa-icon [icon]="faMapMarkerAlt" class="fa-md"></fa-icon> &nbsp; <i>{{ jobExperience.address }}</i>
+      </p>
+      <ul>
+        <li class="mt-3" *ngFor="let job of jobExperience.jobs">{{job}}</li>
+      </ul>
+      <button type="button" class="btn btn-light mr-2 technology"
+        *ngFor="let technology of jobExperience.techonologies">{{technology}}</button>
     </div>
+    <div class="col-md-4">
+      <p class="h5 text-right">
+        <fa-icon [icon]="faCalendarAlt" class="fa-md"></fa-icon> &nbsp;<b>{{jobExperience.start}} &mdash;
+          {{jobExperience.end}}</b>
+      </p>
+    </div>
+  </div>
 </div>

@@ -24,7 +24,7 @@ export class ExperiencesService {
     srbd.jobs = ['Developed applications for windows platform using UWP framework which uses .NET Classes and WinRT APIs', 
                 'Integrated data sync functionalities with mobile platforms for giving Multi-Device experience to users',
                 'Developed customized and responsive UI layouts for different screen size devices in windows platform'];
-    srbd.techonologies = ['C#', 'C++/WinRT', 'Xaml', 'UWP framework'];
+    srbd.techonologies = ['C#', 'C++/WinRT', 'Xaml', 'UWP'];
     this.experiences.push(srbd);
 
     //ng solutions

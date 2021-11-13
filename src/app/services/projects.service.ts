@@ -30,7 +30,7 @@ export class ProjectsService {
       achievements: ["In charge of several modules and engaged in development from scratch to commercialization",
                     "Worked on continuous data sync between multiple devices, developed adaptive UI controls",
                   "Worked on SDK development using C# and C++/WinRT"],
-      technologies: ["C#", "C++/WinRT", "Xaml", "UWP framework"],
+      technologies: ["C#", "C++/WinRT", "Xaml", "UWP"],
       urlText: "See in Microsoft store",
       projectUrl: "https://www.microsoft.com/en-us/p/samsung-notes/9nblggh43vhv"}));
 
@@ -38,7 +38,7 @@ export class ProjectsService {
       achievements: ["Developed Call sync feature to give users multi-device experience",
                     "Implemented call pull scenarios between two or more devices",
                   "Wrote unit test for windows UWP application"],
-      technologies: ["C#", "C++/WinRT", "Xaml", "UWP framework"],
+      technologies: ["C#", "C++/WinRT", "Xaml", "UWP"],
       urlText: "About CMC",
       projectUrl: "https://www.samsung.com/uk/support/mobile-devices/call-and-message-continuity/"}));
     }

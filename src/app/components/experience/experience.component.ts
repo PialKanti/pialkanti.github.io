@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { JobExperience } from 'src/app/models/JobExperience';
+import { faBuilding, faMapMarkerAlt, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'experience',
@@ -7,6 +8,10 @@ import { JobExperience } from 'src/app/models/JobExperience';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
+  faBuilding = faBuilding;
+  faMapMarkerAlt = faMapMarkerAlt;
+  faCalendarAlt = faCalendarAlt;
+
   @Input()
   jobExperience: JobExperience = new JobExperience();
 
