@@ -1,6 +1,20 @@
 <div class="container">
-    <project-type [projects]="projects.get(0)" type="Professional"></project-type>
-    <project-type [projects]="projects.get(1)" type="Academic"></project-type>
-    <project-type [projects]="projects.get(2)" type="Personal"></project-type>
-</div>
+    <ul class="nav nav-tabs nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link" [class.active]="tabId === 0" (click)="tabChange(0)"
+                href="javascript:void(0);">Professional</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [class.active]="tabId === 1" (click)="tabChange(1)"
+                href="javascript:void(0);">Academic</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [class.active]="tabId === 2" (click)="tabChange(2)"
+                href="javascript:void(0);">Personal</a>
+        </li>
+    </ul>
 
+    <project-type *ngIf="tabId === 0" [projects]="projects.get(0)" type="Professional"></project-type>
+    <project-type *ngIf="tabId === 1" [projects]="projects.get(1)" type="Academic"></project-type>
+    <project-type *ngIf="tabId === 2" [projects]="projects.get(2)" type="Personal"></project-type>
+</div>

@@ -1,0 +1,8 @@
+.nav-link.active {
+  background-color: #e7e7e7;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -9,7 +9,8 @@ import { ProjectType } from 'src/app/enums/ProjectType';
 })
 export class ProjectsComponent implements OnInit {
   projects = new Map();
-
+  
+  tabId:number = 0;
   constructor(service: ProjectsService) {
     this.projects = service.getProjects();
    }
@@ -17,4 +18,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  tabChange(id: number){
+    this.tabId = id;
+  }
 }
