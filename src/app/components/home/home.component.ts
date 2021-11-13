@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faEnvelope, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faGraduationCap, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   faLinkedin = faLinkedin;
   faGithub = faGithub;
   faGraduationCap = faGraduationCap;
+  faMapMarkerAlt = faMapMarkerAlt;
 
   constructor() { }
 
