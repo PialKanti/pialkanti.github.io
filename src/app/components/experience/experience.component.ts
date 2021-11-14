@@ -1,11 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { JobExperience } from 'src/app/models/JobExperience';
-import { faBuilding, faMapMarkerAlt, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBuilding,
+  faMapMarkerAlt,
+  faCalendarAlt,
+} from '@fortawesome/free-solid-svg-icons';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css']
+  styleUrls: ['./experience.component.css'],
 })
 export class ExperienceComponent implements OnInit {
   faBuilding = faBuilding;
@@ -15,9 +20,9 @@ export class ExperienceComponent implements OnInit {
   @Input()
   jobExperience: JobExperience = new JobExperience();
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Experiences');
   }
 
+  ngOnInit(): void {}
 }
