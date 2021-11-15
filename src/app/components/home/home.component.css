@@ -3,10 +3,10 @@
 }
 
 .font-icon-url:hover {
-  color: #7b8a8b;
+  opacity: 50%;
 }
 
-#about-me {
+.about-me {
   font-size: 1.2em;
   line-height: 2em;
 }
@@ -22,4 +22,12 @@
 
 .location {
   font-size: 16px;
+}
+
+.linkedin-icon {
+  color: #0a66c2;
+}
+
+.email-icon {
+  color: #cf473f;
 }

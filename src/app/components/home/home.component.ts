@@ -5,7 +5,6 @@ import {
   faMapMarkerAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -19,9 +18,7 @@ export class HomeComponent implements OnInit {
   faGraduationCap = faGraduationCap;
   faMapMarkerAlt = faMapMarkerAlt;
 
-  constructor(private titleService: Title) {
-    this.titleService.setTitle('Home');
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 }

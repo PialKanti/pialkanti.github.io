@@ -5,7 +5,6 @@ import {
   faMapMarkerAlt,
   faCalendarAlt,
 } from '@fortawesome/free-solid-svg-icons';
-import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'experience',
@@ -20,9 +19,7 @@ export class ExperienceComponent implements OnInit {
   @Input()
   jobExperience: JobExperience = new JobExperience();
 
-  constructor(private titleService: Title) {
-    this.titleService.setTitle('Experiences');
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 }

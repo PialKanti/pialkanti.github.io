@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { Project } from 'src/app/models/Projects';
 
 @Component({
@@ -13,9 +12,7 @@ export class ProjectTypeComponent implements OnInit {
   @Input()
   type: string = '';
 
-  constructor(private titleService: Title) {
-    this.titleService.setTitle('Projects');
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 }

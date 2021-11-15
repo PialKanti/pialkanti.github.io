@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import {
   faList,
   faCube,
@@ -16,9 +15,7 @@ export class SkillsComponent implements OnInit {
   faCube = faCube;
   faClipboardList = faClipboardList;
 
-  constructor(private titleService: Title) {
-    this.titleService.setTitle('Skills');
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 }

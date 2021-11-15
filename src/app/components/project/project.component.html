@@ -12,8 +12,12 @@
       *ngFor="let technology of project.technologies">{{technology}}</button>
   </div>
   <div class="col-md-4 text-right">
-    <p class="h5 font-weight-bolder" *ngIf=project.end>{{project.start}} &mdash; {{project.end}}</p>
-    <p class="h5 font-weight-bolder" *ngIf=!project.end>{{project.start}}</p>
+    <p class="h5 font-weight-bolder" *ngIf=project.end>
+      <fa-icon [icon]="faCalendarAlt"></fa-icon>&nbsp;&nbsp;{{project.start}} &mdash; {{project.end}}
+    </p>
+    <p class="h5 font-weight-bolder text-right" *ngIf=!project.end>
+      <fa-icon [icon]="faCalendarAlt"></fa-icon>&nbsp;&nbsp;{{project.start}}
+    </p>
     <a class="btn btn-sm btn-outline-success" href="{{project.projectUrl}}" role="button">{{project.urlText}}</a>
   </div>
 </div>
