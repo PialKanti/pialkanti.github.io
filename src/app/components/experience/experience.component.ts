@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { JobExperience } from 'src/app/models/JobExperience';
 import {
-  faBuilding,
+  faBriefcase,
   faMapMarkerAlt,
   faCalendarAlt,
 } from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +12,7 @@ import {
   styleUrls: ['./experience.component.css'],
 })
 export class ExperienceComponent implements OnInit {
-  faBuilding = faBuilding;
+  faBriefcase = faBriefcase;
   faMapMarkerAlt = faMapMarkerAlt;
   faCalendarAlt = faCalendarAlt;
 
