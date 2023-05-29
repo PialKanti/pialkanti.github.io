@@ -3,23 +3,23 @@
     <div class="col-md-8">
       <p class="h5">
         <b>
-          <fa-icon [icon]="faBriefcase"></fa-icon> &nbsp;{{jobExperience.company}}
+          <fa-icon [icon]="faBriefcase"></fa-icon> &nbsp;{{experience.company.name}}
         </b> &mdash; <i>{{
-          jobExperience.position }}</i>
+          experience.title }}</i>
       </p>
       <p class="text-secondary">
-        <fa-icon [icon]="faMapMarkerAlt" class="fa-md"></fa-icon> &nbsp; <i>{{ jobExperience.address }}</i>
+        <fa-icon [icon]="faMapMarkerAlt" class="fa-md"></fa-icon> &nbsp; <i>{{ experience.company.location }}</i>
       </p>
       <ul>
-        <li class="mt-3" *ngFor="let job of jobExperience.jobs">{{job}}</li>
+        <li class="mt-3" *ngFor="let responsibility of experience.responsibilities">{{responsibility}}</li>
       </ul>
       <button type="button" class="btn btn-light mr-2 technology"
-        *ngFor="let technology of jobExperience.techonologies">{{technology}}</button>
+        *ngFor="let skill of experience.skills">{{skill}}</button>
     </div>
     <div class="col-md-4">
       <p class="h5 text-right">
-        <fa-icon [icon]="faCalendarAlt"></fa-icon> &nbsp;<b>{{jobExperience.start}} &mdash;
-          {{jobExperience.end}}</b>
+        <fa-icon [icon]="faCalendarAlt"></fa-icon> &nbsp;<b>{{startDate}} &mdash;
+          {{endDate}}</b>
       </p>
     </div>
   </div>

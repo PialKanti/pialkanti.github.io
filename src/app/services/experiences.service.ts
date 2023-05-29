@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { JobExperience } from '../models/JobExperience';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
@@ -7,9 +9,13 @@ import { JobExperience } from '../models/JobExperience';
 export class ExperiencesService {
   experiences: JobExperience[] = [];
 
-  constructor() {}
+  constructor(private httpClient: HttpClient) {}
 
-  getExperiences() {
+  public getExperiences(): Observable<any> {
+    return this.httpClient.get('https://localhost:7011/api/experiences');
+  }
+
+  getExperiences1() {
     if (this.experiences.length > 0) {
       return this.experiences;
     }

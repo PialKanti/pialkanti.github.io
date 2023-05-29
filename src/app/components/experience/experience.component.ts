@@ -1,10 +1,11 @@
+import { DatePipe } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
-import { JobExperience } from 'src/app/models/JobExperience';
 import {
   faBriefcase,
   faMapMarkerAlt,
   faCalendarAlt,
 } from '@fortawesome/free-solid-svg-icons';
+import { Experience } from 'src/app/models/Experience';
 
 @Component({
   selector: 'experience',
@@ -17,9 +18,19 @@ export class ExperienceComponent implements OnInit {
   faCalendarAlt = faCalendarAlt;
 
   @Input()
-  jobExperience: JobExperience = new JobExperience();
+  experience: Experience = new Experience();
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  get startDate() {
+    let pipe: DatePipe = new DatePipe('en-US');
+    return pipe.transform(this.experience.startDateTime, 'MMMM y');
+  }
+  get endDate() {
+    return this.experience.endDateTime
+      ? this.experience.endDateTime
+      : 'Present';
+  }
 }
