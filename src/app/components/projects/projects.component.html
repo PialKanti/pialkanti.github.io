@@ -14,7 +14,7 @@
         </li>
     </ul>
 
-    <project-type *ngIf="tabId === 0" [projects]="projects.get(0)" type="Professional"></project-type>
-    <project-type *ngIf="tabId === 1" [projects]="projects.get(1)" type="Academic"></project-type>
-    <project-type *ngIf="tabId === 2" [projects]="projects.get(2)" type="Personal"></project-type>
+    <project-type *ngIf="tabId === 0" [projects]="projects" type="Professional"></project-type>
+    <project-type *ngIf="tabId === 1" [projects]="projects" type="Academic"></project-type>
+    <project-type *ngIf="tabId === 2" [projects]="projects" type="Personal"></project-type>
 </div>
