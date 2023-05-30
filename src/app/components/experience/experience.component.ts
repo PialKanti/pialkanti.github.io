@@ -1,4 +1,3 @@
-import { DatePipe } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import {
   faBriefcase,
@@ -6,6 +5,7 @@ import {
   faCalendarAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { Experience } from 'src/app/models/Experience';
+import { DateUtils } from 'src/app/utils/DateUtils';
 
 @Component({
   selector: 'experience',
@@ -13,6 +13,8 @@ import { Experience } from 'src/app/models/Experience';
   styleUrls: ['./experience.component.css'],
 })
 export class ExperienceComponent implements OnInit {
+  private dateFormat: string = 'MMMM y';
+
   faBriefcase = faBriefcase;
   faMapMarkerAlt = faMapMarkerAlt;
   faCalendarAlt = faCalendarAlt;
@@ -25,12 +27,14 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {}
 
   get startDate() {
-    let pipe: DatePipe = new DatePipe('en-US');
-    return pipe.transform(this.experience.startDateTime, 'MMMM y');
+    return DateUtils.getFormattedDate(
+      this.experience.startDateTime,
+      this.dateFormat
+    );
   }
   get endDate() {
     return this.experience.endDateTime
-      ? this.experience.endDateTime
+      ? DateUtils.getFormattedDate(this.experience.endDateTime, this.dateFormat)
       : 'Present';
   }
 }
