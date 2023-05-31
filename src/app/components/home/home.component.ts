@@ -5,6 +5,9 @@ import {
   faMapMarkerAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { HomeService } from 'src/app/services/home.service';
+import { Degree } from 'src/app/models/Degree';
+import { DateUtils } from 'src/app/utils/DateUtils';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +21,18 @@ export class HomeComponent implements OnInit {
   faGraduationCap = faGraduationCap;
   faMapMarkerAlt = faMapMarkerAlt;
 
-  constructor() {}
+  degrees: Degree[] = [];
+  private dateFormat: string = 'y';
 
-  ngOnInit(): void {}
+  constructor(private service: HomeService) {}
+
+  ngOnInit(): void {
+    this.service.getDegrees().subscribe((data) => {
+      this.degrees = data;
+    });
+  }
+
+  formatDate(date: Date) {
+    return DateUtils.getFormattedDate(date, this.dateFormat);
+  }
 }

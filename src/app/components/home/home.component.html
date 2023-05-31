@@ -58,23 +58,31 @@
                 <p class="h4 font-weight-bolder">Education</p>
                 <hr>
                 <ul class="list-unstyled">
-                    <li>
-                        <div class="row">
+                    <li *ngFor="let degree of degrees">
+                        <div class="row mb-3">
                             <div class="col-md-1">
-                                <fa-icon [icon]="faGraduationCap" class="fa-2x"></fa-icon>
+                                <fa-icon [icon]="faGraduationCap" class="degree-icon fa-2x"></fa-icon>
                             </div>
-                            <div class="col-md-11">
+                            <div class="degree-content col-md-11">
                                 <div class="row course">
                                     <div class="col-md-8">
-                                        <p class="font-weight-bold">B.Sc. in Computer Science & Engineering</p>
+                                        <p class="font-weight-bold">{{degree.name}}</p>
                                     </div>
                                     <div class="col-md-4 text-right">
-                                        <p class="font-weight-bold">2012 &mdash; 2017</p>
+                                        <p class="font-weight-bold">{{formatDate(degree.startDateTime)}} &mdash;
+                                            {{formatDate(degree.endDateTime)}}</p>
                                     </div>
                                 </div>
-                                <p class="university text-secondary">Khulna University of Engineering & Technology
-                                    (KUET)
-                                </p>
+                                <div class="row institution-info">
+                                    <p class="institution">
+                                        {{degree.institution.name}}
+                                    </p>
+                                </div>
+                                <div class="row institution-info">
+                                    <p class="institution-location text-secondary">
+                                        {{degree.institution.location}}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </li>

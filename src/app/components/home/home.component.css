@@ -12,12 +12,19 @@
 }
 
 .course {
-  height: 1.6em;
   font-size: 1.2em;
 }
 
-.university {
+.institution {
   font-size: 1.1em;
+  font-weight: 500;
+  font-style: oblique;
+  color: #292c2e;
+}
+
+.institution-location {
+  font-size: 0.95em;
+  font-style: italic;
 }
 
 .location {
@@ -30,4 +37,16 @@
 
 .email-icon {
   color: #cf473f;
+}
+
+.degree-content {
+  line-height: 10px;
+}
+
+.degree-icon {
+  vertical-align: top;
+}
+
+.institution-info {
+  margin-left: 0px;
 }
