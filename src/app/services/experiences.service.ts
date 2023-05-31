@@ -10,6 +10,6 @@ export class ExperiencesService {
   constructor(private httpClient: HttpClient) {}
 
   public getExperiences(): Observable<any> {
-    return this.httpClient.get(`${environment.baseUrl}/api/experiences`);
+    return this.httpClient.get(`${environment.baseUrl}/experiences`);
   }
 }

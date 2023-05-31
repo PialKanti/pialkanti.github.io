@@ -11,8 +11,6 @@ export class ProjectsService {
   constructor(private httpClient: HttpClient) {}
 
   public getExperiences(type: string): Observable<any> {
-    return this.httpClient.get(
-      `${environment.baseUrl}/api/projects/type/${type}`
-    );
+    return this.httpClient.get(`${environment.baseUrl}/projects/type/${type}`);
   }
 }
