@@ -1,5 +1,8 @@
 <p class="h3 font-weight-bolder mt-5">{{type}} Projects</p>
 <hr>
-<div *ngFor="let project of projects">
-    <project [project]="project"></project>
-</div>
+<app-spinner *ngIf="loading; else elseBlock" class="m-1"></app-spinner>
+<ng-template #elseBlock>
+    <div *ngFor="let project of projects">
+        <project [project]="project"></project>
+    </div>
+</ng-template>

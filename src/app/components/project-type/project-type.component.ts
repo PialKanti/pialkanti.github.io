@@ -11,6 +11,8 @@ export class ProjectTypeComponent implements OnInit {
   projects: Project[] = [];
   @Input()
   type: string = '';
+  @Input()
+  loading: boolean = false;
 
   constructor() {}
 
