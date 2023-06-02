@@ -1,3 +1,12 @@
-<div class="container" *ngFor="let experience of experieneces">
-    <experience [experience]="experience"></experience>
+<div class="container">
+    <div class="mt-5">
+        <p class="h3 font-weight-bolder">Professional Experience</p>
+        <hr>
+        <app-spinner *ngIf="loading; else elseBlock" class="m-1"></app-spinner>
+        <ng-template #elseBlock>
+            <div class="container" *ngFor="let experience of experieneces">
+                <experience [experience]="experience"></experience>
+            </div>
+        </ng-template>
+    </div>
 </div>
