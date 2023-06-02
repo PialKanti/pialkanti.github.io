@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.getDegrees().subscribe((data) => {
-      this.loading = true;
+      this.loading = false;
       this.degrees = data;
     });
   }
