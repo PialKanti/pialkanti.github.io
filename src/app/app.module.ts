@@ -16,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './components/home/home.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ResearchComponent } from './components/research/research.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ResearchComponent } from './components/research/research.component';
     HomeComponent,
     SkillsComponent,
     ResearchComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,

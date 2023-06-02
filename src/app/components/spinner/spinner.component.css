@@ -1,0 +1,43 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.3); /* Initial muted color */
+  border-radius: 50%;
+  margin: 0 5px;
+  opacity: 1;
+  animation: dot-flush 1.2s infinite;
+}
+
+.dot-1 {
+  animation-delay: 0s;
+}
+
+.dot-2 {
+  animation-delay: 0.4s;
+}
+
+.dot-3 {
+  animation-delay: 0.8s;
+}
+
+@keyframes dot-flush {
+  0%,
+  30% {
+    opacity: 1;
+  }
+  40%,
+  60% {
+    opacity: 1;
+    background-color: #000; /* Full color */
+  }
+  100% {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3); /* Return to muted color */
+  }
+}

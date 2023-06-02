@@ -21,13 +21,17 @@ export class HomeComponent implements OnInit {
   faGraduationCap = faGraduationCap;
   faMapMarkerAlt = faMapMarkerAlt;
 
+  loading: boolean = false;
   degrees: Degree[] = [];
   private dateFormat: string = 'y';
 
-  constructor(private service: HomeService) {}
+  constructor(private service: HomeService) {
+    this.loading = true;
+  }
 
   ngOnInit(): void {
     this.service.getDegrees().subscribe((data) => {
+      this.loading = true;
       this.degrees = data;
     });
   }
